@@ -1,0 +1,190 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Navbar */
+nav {
+    background: #111827;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Navbar Links */
+nav a {
+    color: #f9fafb;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Animated underline */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.3s ease;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Main Container */
+.container {
+    background: white;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    animation: slideUp 0.8s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #111827;
+}
+
+/* Text */
+.container p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.container h2 {
+    font-size: 50px;
+    margin: 8px 0;
+    color: #00c3ff;
+
+}
+
+
+
+
+
+
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        margin: 30px 15px;
+        padding: 30px 20px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* Small Profile Image */
+.profile-img {
+    margin-bottom: 15px;
+}
+
+.profile-img img {
+    width: 200px;      /* SMALL SIZE */
+    height: 200px;     /* SMALL SIZE */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #70bbee;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
